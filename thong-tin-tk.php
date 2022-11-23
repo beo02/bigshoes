@@ -100,7 +100,7 @@
 					<?php
 						if($vai_tro == 1){
 					?>
-						<button class="login100-form-btn" type = "submit" name = "btn_admin">
+						<button class="login100-form-btn" type = "submit" name = "btn_admin" href="thong-ke-list.php">
 							ADMIN
 						</button></a>
 					<?php }?>
