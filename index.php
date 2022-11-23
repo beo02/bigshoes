@@ -51,9 +51,9 @@
                             session_start();
                             if(!isset($_SESSION['user'])){
                         ?>
-                        <a class="signup-btn" href="tai-khoan/dang-nhap.php"><span>Đăng nhập</span> </a>
+                        <a class="signup-btn" href="bigshoes-ttv/tai-khoan/dang-nhap.php"><span>Đăng nhập</span> </a>
                         <?php }else{ ?>
-                        <a  class="signup-btn" href="tai-khoan/thong-tin-tk.php"><span><?=$_SESSION['user']['ho_ten'] ?> </span></a>
+                        <a  class="signup-btn" href="bigshoes-ttv/tai-khoan/thong-tin-tk.php"><span><?=$_SESSION['user']['ho_ten'] ?> </span></a>
                         <?php } ?>
                     </div>
                 </div>
