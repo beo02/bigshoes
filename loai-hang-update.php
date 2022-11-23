@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../bigshoes/trang-chinh/"><strong style = "margin-left: 40px;">BIG SHOES</strong></a>
+                <a class="navbar-brand" href=""><strong style = "margin-left: 40px;">BIG SHOES</strong></a>
             </div>
            
     <!-- Nav bar-->
@@ -61,7 +61,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Cài đặt</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="../../../../bigshoes/tai-khoan/dang-xuat.php"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                        <li><a href="dang-xuat.php"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -75,23 +75,23 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                 <li>
-                        <a href="../thong-ke/thong-ke-list.php"><i class="fa fa-dashboard"></i>TRANG CHỦ</a>
+                        <a href="thong-ke-list.php"><i class="fa fa-dashboard"></i>TRANG CHỦ</a>
                     </li>
                     <li>
-                        <a href="../loai-hang/loai-hang-list.php"><i class="fa fa-list-alt" aria-hidden="true"></i>LOẠI HÀNG</a>
+                        <a href="loai-hang-list.php"><i class="fa fa-list-alt" aria-hidden="true"></i>LOẠI HÀNG</a>
                     </li>
                     <li>
-                        <a href="../hang-hoa/hang-hoa-list.php"><i class="fa fa-qrcode"></i>HÀNG HÓA</a>
+                        <a href="hang-hoa-list.php"><i class="fa fa-qrcode"></i>HÀNG HÓA</a>
                     </li>
                     
                     <li>
-                        <a href="../khach-hang/khach-hang-list.php"><i class="fa fa-user"></i>KHÁCH HÀNG</a>
+                        <a href="khach-hang-list.php"><i class="fa fa-user"></i>KHÁCH HÀNG</a>
                     </li>
                     <li>
-                        <a href="../binh-luan/binh-luan-list.php"><i class="fa fa-comment-o" aria-hidden="true"></i>BÌNH LUẬN</a>
+                        <a href="binh-luan-list.php"><i class="fa fa-comment-o" aria-hidden="true"></i>BÌNH LUẬN</a>
                     </li>
                     <li>
-                        <a href="../hoa-don/hoa-don-list.php"><i class="fa fa-edit"></i>ĐƠN HÀNG</a>
+                        <a href="hoa-don-list.php"><i class="fa fa-edit"></i>ĐƠN HÀNG</a>
                     </li>       
                 </ul>
             </div>
