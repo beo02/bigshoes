@@ -48,7 +48,7 @@
 		if(array_key_exists('btn_logout',$_REQUEST)){
 			header('location: dang-xuat.php');
 		}else if(array_key_exists('btn_admin',$_REQUEST)){
-			header('location: ');
+			header('location: thong-ke-list.php');
 		}
 	?>
 
@@ -100,7 +100,7 @@
 					<?php
 						if($vai_tro == 1){
 					?>
-						<button class="login100-form-btn" type = "submit" name = "btn_admin" href="thong-ke-list.php">
+						<button class="login100-form-btn" type = "submit" name = "btn_admin">
 							ADMIN
 						</button></a>
 					<?php }?>
