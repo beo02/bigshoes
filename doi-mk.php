@@ -32,7 +32,7 @@
 
 	<!-- CODE XỬ LÝ PHP -->
 	<?php
-		require_once ('../admin/dao/khach-hang.php');
+		require_once ('khach-hang.php');
 
 		extract($_REQUEST);
 		if(array_key_exists('btn_change',$_REQUEST)){
@@ -104,7 +104,7 @@
 					</div>
 
 					<div class="text-center p-t-90">
-					<a class="txt1" href="../../bigshoes/trang-chinh/index.php">
+					<a class="txt1" href="index.php">
 							Home ?
 						</a>OR
 					<a class="txt1" href="dang-ky.php">
