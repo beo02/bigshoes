@@ -139,7 +139,7 @@
 
 
     <?php
-        require_once ('../admin/dao/hang-hoa.php');
+        require_once ('hang-hoa.php');
         $items = hang_hoa_select_all_adidas();
     
     ?>
