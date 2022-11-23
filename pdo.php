@@ -1,11 +1,19 @@
 <?php
-
-    function pdo_get_connection(){
         $host = "mysql5030"; //địa chỉ mysql server sẽ kết nối đến
         $dbname="db_a9046f_bigshoe"; //tên database sẽ kết nối đến
         $username = "a9046f_bigshoe"; //username để kết nối đến database 
         $password = "thanh1812"; // mật khẩu để kết nối đến database
-        $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8", $username, $password);  // kết nối đến database. $conn gọi là đối tượng kết nối.
+        $conn = mysqli_connect($servername, $username, $password, $database);
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+        }
+        echo “Connected successfully”;
+        mysqli_close($conn);
+
+    function pdo_get_connection(){
+        $pdo = new PDO("mysql:host=mysql5030;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $pdo;    
     }
 
     function pdo_execute($sql){//thêm dữ liệu
