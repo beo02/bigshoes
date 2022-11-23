@@ -33,7 +33,7 @@
 	<!-- CODE XỬ LÝ PHP -->
 	<?php
         session_start();
-		require_once ('../admin/dao/khach-hang.php');
+		require_once ('khach-hang.php');
         
         extract($_REQUEST);
         if(array_key_exists('btn_update',$_REQUEST)){
@@ -46,9 +46,9 @@
 		
 
 		if(array_key_exists('btn_logout',$_REQUEST)){
-			header('location: ../tai-khoan/dang-xuat.php');
+			header('location: dang-xuat.php');
 		}else if(array_key_exists('btn_admin',$_REQUEST)){
-			header('location: ../admin/');
+			header('location: ');
 		}
 	?>
 
@@ -93,7 +93,7 @@
 
 					
 					<div class="container-login100-form-btn">
-					<a href="../../dang-xuat.php">
+					<a href="dang-xuat.php">
 					<button class="login100-form-btn" type = "submit" name = "btn_logout">
 							ĐĂNG XUẤT
 						</button></a>&nbsp;
@@ -108,10 +108,10 @@
 
 					<div class="text-center p-t-90">
 						
-						<a class="txt1" href="../../bigshoes/tai-khoan/cap-nhat-tk.php">
+						<a class="txt1" href="cap-nhat-tk.php">
 							Cập nhật tài khoản ?&nbsp;
 						</a> or
-						<a class="txt1" href="../../bigshoes/tai-khoan/doi-mk.php">
+						<a class="txt1" href="doi-mk.php">
 						&nbsp;Đổi mật khẩu ?
 						</a>
 					</div>
