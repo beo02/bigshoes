@@ -17,13 +17,13 @@
 <body>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="../css/trang-chu/plugin/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../bigshoes-ttv/css/trang-chu/plugin/js/owl.carousel.min.js"></script>
 
 
     <div class="container-fluid">
         <div class="banner">
             <video autoplay muted loop id="myVideo">
-                <source src="../css/trang-chu/img/production ID_4909306.mp4" type="video/mp4">
+                <source src="../bigshoes-ttv/css/trang-chu/img/production ID_4909306.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
             <div class="row">
@@ -51,9 +51,9 @@
                             session_start();
                             if(!isset($_SESSION['user'])){
                         ?>
-                        <a class="signup-btn" href="bigshoes-ttv/tai-khoan/dang-nhap.php"><span>Đăng nhập</span> </a>
+                        <a class="signup-btn" href="../bigshoes-ttv/tai-khoan/dang-nhap.php"><span>Đăng nhập</span> </a>
                         <?php }else{ ?>
-                        <a  class="signup-btn" href="bigshoes-ttv/tai-khoan/thong-tin-tk.php"><span><?=$_SESSION['user']['ho_ten'] ?> </span></a>
+                        <a  class="signup-btn" href="../bigshoes-ttv/tai-khoan/thong-tin-tk.php"><span><?=$_SESSION['user']['ho_ten'] ?> </span></a>
                         <?php } ?>
                     </div>
                 </div>
