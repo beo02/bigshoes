@@ -33,7 +33,7 @@
 	<!-- CODE XỬ LÝ PHP -->
 	<?php
         session_start();
-		require_once ('../admin/dao/khach-hang.php');
+		require_once ('khach-hang.php');
         
         extract($_REQUEST);
         if(array_key_exists('btn_update',$_REQUEST)){
@@ -55,7 +55,7 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method = "post">
 					<span class="login100-form-logo">
-						<a href="../../bigshoes/trang-chinh/index.php"><img src="../css/tai-khoan/images/logo.png" width = "80px" alt=""></a>
+						<a href="index.php"><img src="../css/tai-khoan/images/logo.png" width = "80px" alt=""></a>
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
@@ -95,7 +95,7 @@
 					</div>
 
 					<div class="text-center p-t-90">
-						<a class="txt1" href="../../bigshoes/trang-chinh/index.php">
+						<a class="txt1" href="index.php">
 							Home ?
 						</a>
 					</div>
