@@ -6,8 +6,6 @@
         $username = "a9046f_bigshoe"; //username để kết nối đến database 
         $password = "thanh1812"; // mật khẩu để kết nối đến database
         $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8", $username, $password);  // kết nối đến database. $conn gọi là đối tượng kết nối.
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $pdo;
     }
 
     function pdo_execute($sql){//thêm dữ liệu
