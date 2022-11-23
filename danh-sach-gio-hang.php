@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../bigshoes/css/chi-tiet-sp/products.css">
+    <link rel="stylesheet" href="../css/chi-tiet-sp/products.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../bigshoes/css/chi-tiet-sp/plugin/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../bigshoes/css/chi-tiet-sp/plugin/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/chi-tiet-sp/plugin/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/chi-tiet-sp/plugin/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="../../bigshoes/css/chi-tiet-sp/plugin/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../css/chi-tiet-sp/plugin/js/owl.carousel.min.js"></script>
 
 
     <div class="container-fluid">
@@ -32,9 +32,9 @@
                     session_start();
                     if(!isset($_SESSION['user'])){
                   ?>
-                  <a href="../../bigshoes/tai-khoan/dang-nhap.php"><p><strong>ĐĂNG NHẬP / ĐĂNG KÍ</strong></p></a> 
+                  <a href="dang-nhap.php"><p><strong>ĐĂNG NHẬP / ĐĂNG KÍ</strong></p></a> 
                     <?php }else{ ?>
-                  <a href="../../bigshoes/tai-khoan/thong-tin-tk.php"><p><strong>XIN CHÀO <?=$_SESSION['user']['ho_ten']?></strong></p></a>
+                  <a href="thong-tin-tk.php"><p><strong>XIN CHÀO <?=$_SESSION['user']['ho_ten']?></strong></p></a>
                   <?php } ?>
                 </div>
 
@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-4" style="background-color: rgb(54, 54, 54);text-align: center">
                 <div class="logo">
-                <a href="index.php"><img src="../../bigshoes/css/danh-sach-sp/img/y.png" alt="anh"></a>
+                <a href="index.php"><img src="../css/danh-sach-sp/img/y.png" alt="anh"></a>
                 </div>
             </div>
             <div class="col-md-4" style="background-color: rgb(54, 54, 54);text-align: center">
@@ -153,7 +153,7 @@
                 <tr>
                
                     <td><?=$name ?></td>
-                    <td><img src="../../bigshoes/css/admin/images/products/<?=$hinh?>" alt="" style = "width:80px;"></td>
+                    <td><img src="../css/admin/images/products/<?=$hinh?>" alt="" style = "width:80px;"></td>
                     <td><?=number_format($price - ($price*($giam_gia/100))) ?> VNĐ</td>
                     <td><input class="form-control" type="number" name='sl[<?=$ma_hh?>]' value="<?=$sl ?>" style="width:50px;"></td>
                     <td><?=number_format(($price - ($price*($giam_gia/100)))*$sl);
@@ -234,7 +234,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="fo">
-                        <img src="../../bigshoes/css/danh-sach-sp/img/logooo.png" alt="" style ="width:60px;">
+                        <img src="../css/danh-sach-sp/img/logooo.png" alt="" style ="width:60px;">
                         </div>
                     </div>
                     <div class="col-md-3">
