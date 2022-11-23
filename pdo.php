@@ -1,16 +1,11 @@
 <?php
-    session_start();
-        $servername = "mysql5030";
-        $username = "a9046f_bigshoe";
-        $password = "thanh1812";
-        $dbname ="db_a9046f_bigshoe";
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
-        if(!$conn){
-                    die("Connectione failed: rồi".mysqli_connect_erro());
-            }
-        mysqli_query($conn,"set names utf8");
+
     function pdo_get_connection(){
-        $pdo = new PDO("mysql:host=mysql.site4now.net;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
+        $host = "mysql5030"; //địa chỉ mysql server sẽ kết nối đến
+        $dbname="db_a9046f_bigshoe"; //tên database sẽ kết nối đến
+        $username = "a9046f_bigshoe"; //username để kết nối đến database 
+        $password = "thanh1812"; // mật khẩu để kết nối đến database
+        $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8", $username, $password);  // kết nối đến database. $conn gọi là đối tượng kết nối.
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
