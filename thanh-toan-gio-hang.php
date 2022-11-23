@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-    require_once ('../../dao/hoa-don.php');
+    require_once ('hoa-don.php');
     extract($_REQUEST);
     $item = hoa_don_select_by_id($ma_hd);
     extract($item);
