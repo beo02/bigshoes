@@ -1,9 +1,14 @@
 <?php
-    function pdo_get_connection(){
-        $pdo = new PDO("mysql:host=localhost;dbname=bigshoes",'root','');
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $pdo;
-    }
+session_start();
+        $servername = "mysql5030";
+        $username = "a9046f_bigshoe";
+        $password = "thanh1812";
+        $dbname = "db_a9046f_bigshoes";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        if(!$conn){
+            die("Connection failed: rồi ".mysqli_connect_error());
+        }
+mysqli_query($conn, "set names utf8")
 
     function pdo_execute($sql){//thêm dữ liệu
         $sql_args = array_slice(func_get_args(),1);
