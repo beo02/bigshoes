@@ -1,6 +1,6 @@
 <?php
     function pdo_get_connection(){
-        $pdo = new PDO("mysql:host=SQL5030.site4now.net;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
+        $pdo = new PDO("mysql:host=mysql5030.site4now.net;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;    
     }
