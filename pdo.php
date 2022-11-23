@@ -1,7 +1,15 @@
 <?php
     function pdo_get_connection(){
-        $pdo = new PDO("mysql:host=localhost;dbname=bigshoes",'root','');
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $servername = "mysql5030";
+        $username = "a9046f_bigshoe";
+        $password = "thanh1812";
+        $dbname ="db_a9046f_bigshoes";
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+        if(!$conn){
+                    die("Connectione failed: rồi".mysqli_connect_erro());
+            }
+        mysqli_query($conn,"set names utf8");
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
 
