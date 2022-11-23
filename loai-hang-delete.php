@@ -1,5 +1,5 @@
 <?php
-    require_once ('../../dao/loai-hang.php');
+    require_once ('loai-hang.php');
 
     extract($_REQUEST);
 
