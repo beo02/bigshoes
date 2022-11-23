@@ -1,5 +1,5 @@
 <?php
-    require_once ('../../dao/hang-hoa.php');
+    require_once ('hang-hoa.php');
 
     extract($_REQUEST);
 
