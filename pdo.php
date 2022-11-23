@@ -10,7 +10,7 @@
             }
         mysqli_query($conn,"set names utf8");
     function pdo_get_connection(){
-        $pdo = new PDO("mysql:host=mysql5030;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
+        $pdo = new PDO("mysql:host=mysql.site4now.net;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
@@ -83,7 +83,7 @@
 
     function check_login(){
         if(!isset($_SESSION['user'])){      
-            header("location: /bigshoes/tai-khoan/dang-nhap.php");
+            header("location: dang-nhap.php");
         }
     }
     
