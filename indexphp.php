@@ -1,3 +1,3 @@
 <?php
-    header('location: content/thong-ke/thong-ke-list.php');
+    header('location: thong-ke-list.php');
 ?>
