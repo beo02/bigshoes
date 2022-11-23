@@ -1,5 +1,5 @@
 <?php
-    require_once ('../../dao/binh-luan.php');
+    require_once ('binh-luan.php');
 
     extract($_REQUEST);
 
