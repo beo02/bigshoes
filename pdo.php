@@ -3,7 +3,7 @@
         $servername = "mysql5030";
         $username = "a9046f_bigshoe";
         $password = "thanh1812";
-        $dbname ="db_a9046f_bigshoes";
+        $dbname ="db_a9046f_bigshoe";
             $conn = mysqli_connect($servername, $username, $password, $dbname);
         if(!$conn){
                     die("Connectione failed: rồi".mysqli_connect_erro());
