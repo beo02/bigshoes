@@ -7,11 +7,11 @@
     <meta content="webthemez" name="author" />
     <title>ADMIN</title>
 	<!-- Bootstrap Styles-->
-    <link href="../../../css/admin/css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/admin/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
-    <link href="../../../css/admin/css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/admin/css/font-awesome.css" rel="stylesheet" />
         <!-- Custom Styles-->
-    <link href="../../../css/admin/css/custom-styles.css" rel="stylesheet" />
+    <link href="../css/admin/css/custom-styles.css" rel="stylesheet" />
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../bigshoes/trang-chinh/"><strong style = "margin-left: 40px;">BIG SHOES</strong></a>
+                <a class="navbar-brand" href="index.php"><strong style = "margin-left: 40px;">BIG SHOES</strong></a>
             </div>
            
     <!-- Nav bar-->
@@ -80,23 +80,23 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                 <li>
-                        <a href="../thong-ke/thong-ke-list.php"><i class="fa fa-dashboard"></i>TRANG CHỦ</a>
+                        <a href="thong-ke-list.php"><i class="fa fa-dashboard"></i>TRANG CHỦ</a>
                     </li>
                     <li>
-                        <a href="../loai-hang/loai-hang-list.php"><i class="fa fa-list-alt" aria-hidden="true"></i>LOẠI HÀNG</a>
+                        <a href="loai-hang-list.php"><i class="fa fa-list-alt" aria-hidden="true"></i>LOẠI HÀNG</a>
                     </li>
                     <li>
-                        <a href="../hang-hoa/hang-hoa-list.php"><i class="fa fa-qrcode"></i>HÀNG HÓA</a>
+                        <a href="hang-hoa-list.php"><i class="fa fa-qrcode"></i>HÀNG HÓA</a>
                     </li>
                     
                     <li>
-                        <a href="../khach-hang/khach-hang-list.php"><i class="fa fa-user"></i>KHÁCH HÀNG</a>
+                        <a href="khach-hang-list.php"><i class="fa fa-user"></i>KHÁCH HÀNG</a>
                     </li>
                     <li>
-                        <a href="../binh-luan/binh-luan-list.php"><i class="fa fa-comment-o" aria-hidden="true"></i>BÌNH LUẬN</a>
+                        <a href="binh-luan-list.php"><i class="fa fa-comment-o" aria-hidden="true"></i>BÌNH LUẬN</a>
                     </li>
                     <li>
-                        <a href="../hoa-don/hoa-don-list.php"><i class="fa fa-edit"></i>ĐƠN HÀNG</a>
+                        <a href="hoa-don-list.php"><i class="fa fa-edit"></i>ĐƠN HÀNG</a>
                     </li>        
                 </ul>
             </div>
@@ -111,12 +111,12 @@
 
                             <!-- /. CODE XỬ LÝ PHP  -->
                             <?php
-                                require_once ('../../dao/hang-hoa.php');
-                                require_once ('../../dao/loai-hang.php');
+                                require_once ('hang-hoa.php');
+                                require_once ('loai-hang.php');
 
                                 extract($_REQUEST);
                                 if(array_key_exists("btn_insert",$_REQUEST)){
-                                    $up_hinh = save_file("hinh", "../../../../bigshoes/css/admin/images/products/");
+                                    $up_hinh = save_file("hinh", "../css/admin/images/products/");
                                     $hinh = strlen($up_hinh) > 0 ? $up_hinh : 'product.png';
 
                                     hang_hoa_insert($ten_hh,$hinh,$don_gia,$giam_gia,$mo_ta,$ma_loai);
@@ -175,13 +175,13 @@
      <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    <script src="../../../css/admin/js/jquery-1.10.2.js"></script>
+    <script src="../css/admin/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
-    <script src="../../../css/admin/js/bootstrap.min.js"></script>
+    <script src="../css/admin/js/bootstrap.min.js"></script>
     <!-- Metis Menu Js -->
-    <script src="../../../css/admin/js/jquery.metisMenu.js"></script>
+    <script src="../css/admin/js/jquery.metisMenu.js"></script>
       <!-- Custom Js -->
-    <script src="../../../css/admin/js/custom-scripts.js"></script>
+    <script src="../css/admin/js/custom-scripts.js"></script>
     
    
 </body>
