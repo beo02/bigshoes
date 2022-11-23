@@ -4,12 +4,12 @@
         $dbname="db_a9046f_bigshoe"; //tên database sẽ kết nối đến
         $username = "a9046f_bigshoe"; //username để kết nối đến database 
         $password = "thanh1812"; // mật khẩu để kết nối đến database
-        $conn = mysqli_connect($servername, $username, $password, $database);
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        $pdo = new PDO("mysql:host=mysql5053;dbname=db_a9046f_bigshoe",'a9046f_bigshoe','thanh1812');
+        if ($pdo->connect_error) {
+        die("Connection failed: " . $pdo->connect_error);
         }
         echo “Connected successfully”;
-        mysqli_close($conn);
+        mysqli_close($pdo);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;    
     }
